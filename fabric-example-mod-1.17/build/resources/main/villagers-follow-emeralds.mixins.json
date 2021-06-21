@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "matjojo.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "villagerInitMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
