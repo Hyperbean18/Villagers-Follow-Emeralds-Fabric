@@ -1,9 +1,10 @@
 # Fabric Example Mod
 
-## Setup
+Villagers follow Emeralds blocks, Emerald Ore and Deepslate Emerald Ore when held in hand. Works on the client if you're playing in singleplayer. You just need to install it on the server for it to work on there.
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+ 
 
-## License
+Report Bugs/ Make Suggestions on the Github page
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+
+https://youtu.be/s_QiqLbjWY0
