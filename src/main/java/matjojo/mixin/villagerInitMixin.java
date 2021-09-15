@@ -20,7 +20,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(VillagerEntity.class)
 public abstract class villagerInitMixin extends MerchantEntity {
 	
-	public static final Tag<Item> EMERALD_ITEMS = TagFactory.ITEM.create(new Identifier("c", "emerald_items"));
+	public static final Tag<Item> EMERALD_ITEMS = TagFactory.ITEM.create(new Identifier("villagersfollowemeralds", "emerald_items"));
 
 	public villagerInitMixin(EntityType<? extends MerchantEntity> entityType, World world) {
 		super(entityType, world);
