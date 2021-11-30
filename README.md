@@ -1,10 +1,9 @@
-# Villagers-Follow-Emeralds-Fabric
+# Fabric Example Mod
 
-Villagers follow Emeralds blocks, Emerald Ore and Deepslate Emerald Ore when held in hand. Works on the client if you're playing in singleplayer. You just need to install it on the server for it to work on there.
+## Setup
 
- 
+For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
 
-Report Bugs/ Make Suggestions on the Github page
+## License
 
-
-https://youtu.be/s_QiqLbjWY0
+This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
