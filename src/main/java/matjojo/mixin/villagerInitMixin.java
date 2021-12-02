@@ -1,5 +1,9 @@
 package matjojo.mixin;
 
+import net.fabricmc.fabric.api.tag.TagFactory;
+import net.minecraft.item.Item;
+import net.minecraft.tag.Tag;
+import net.minecraft.util.Identifier;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.passive.MerchantEntity;
@@ -15,6 +19,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(VillagerEntity.class)
 public abstract class villagerInitMixin extends MerchantEntity {
+	
+	public static final Tag<Item> EMERALD_ITEMS = TagFactory.ITEM.create(new Identifier("villagersfollowemeralds", "emerald_items"));
 
 	public villagerInitMixin(EntityType<? extends MerchantEntity> entityType, World world) {
 		super(entityType, world);
@@ -23,7 +29,7 @@ public abstract class villagerInitMixin extends MerchantEntity {
 	@Inject(method = "<init>(Lnet/minecraft/entity/EntityType;Lnet/minecraft/world/World;Lnet/minecraft/village/VillagerType;)V",
 			at = @At(value = "TAIL"))
 	private void inject(EntityType<? extends VillagerEntity> entityType, World world, VillagerType type, CallbackInfo ci) {
-		this.goalSelector.add(2, new TemptGoal(this, .4D, Ingredient.ofItems(Items.EMERALD_BLOCK, Items.EMERALD_ORE,Items.DEEPSLATE_EMERALD_ORE), false));
+		this.goalSelector.add(2, new TemptGoal(this, .4D, Ingredient.ofItems(EMERALD_ITEMS), false));
 	}
 
 }
