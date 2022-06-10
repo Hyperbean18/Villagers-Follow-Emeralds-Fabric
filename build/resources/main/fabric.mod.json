@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "villagers-follow-emeralds",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "name": "Villagers Follow Emeralds",
   "description": "Villagers will follow you when you're holding emerald blocks/ore",
   "authors": [
