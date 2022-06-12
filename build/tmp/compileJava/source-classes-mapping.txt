@@ -1,2 +1,0 @@
-matjojo/mixin/villagerInitMixin.java
- matjojo.mixin.villagerInitMixin
